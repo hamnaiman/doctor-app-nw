@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase Assignment -1 </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="signup-container" id="signUp">
+        <h1>Welcome! Please Sign Up or Sign In</h1>
+        <form id="auth-form">
+          <!-- Email Field -->
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Enter your email" required>
+          </div>
+      
+          <!-- Password Field -->
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input id="password" type="password" placeholder="Enter your password" required>
+          </div>
+      
+          <!-- Full Name Field -->
+          <div class="input-group">
+            <label for="full_name">Full Name</label>
+            <input id="full_name" type="text" placeholder="Enter your full name" required>
+          </div>
+      
+          <!-- Phone Number Field -->
+          <div class="input-group">
+            <label for="phone">Phone Number</label>
+            <input id="phone" type="tel" placeholder="Enter your phone number" required>
+          </div>
+      
+          <!-- Role Selection (Doctor/Patient) -->
+          <div class="input-group">
+            <label for="role">Role</label>
+            <select id="role" required>
+              <option value="doctor">Doctor</option>
+              <option value="patient">Patient</option>
+            </select>
+          </div>
+      
+          <!-- Button Group -->
+          <div class="button-group">
+            <button type="button" id="sign_up" class="btn">Sign Up</button>
+            <button type="button" id="sign_in" class="btn" onclick="window.location.href='signin.html'">Sign In</button>
+          </div>
+        </form>
+      </div>
+      
+
+  
+    <script type="module" src="firebase.js"></script>
+    <script src="app.js"></script>
+    
+
+</body>
+</html>
